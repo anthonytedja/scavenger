@@ -1,0 +1,24 @@
+body {
+  font-family: 'Open Sans SemiCondensed';
+  background-image: linear-gradient(#000, #000), url('../../assets/img/labyrinth.svg');
+  background-blend-mode: screen;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #8670b1;
+  /*min-height: 80vh;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+* {
+  transition: all 0.2s linear;
+}
+
