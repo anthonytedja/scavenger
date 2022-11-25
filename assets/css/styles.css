@@ -1,24 +1,34 @@
 body {
   font-family: 'Open Sans SemiCondensed';
-  background-image: linear-gradient(#000, #000), url('../../assets/img/labyrinth.svg');
+  background-image: linear-gradient(#5600ff, #5600ff), url('../../assets/img/labyrinth.svg');
   background-blend-mode: screen;
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #8670b1;
-  /*min-height: 80vh;*/
+  background-color: #cc9cff;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+* {
+  transition: all 0.2s linear;
+}
+
 a {
-  color: black;
+  color: var(--bs-body-color);
   text-decoration: underline;
 }
 
-* {
-  transition: all 0.2s linear;
+a:hover {
+  color: black;
+}
+
+.subtitle {
+  color: black;
+  font-family: 'Yellowtail';
+  text-shadow: 2px 2px 2px var(--bs-cyan);
+  font-size: clamp(1.5rem, 1.5rem + 2vw, 5rem);
 }
 

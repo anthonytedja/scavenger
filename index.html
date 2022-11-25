@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>MCSS Scavenger Hunt</title>
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/scavenger.jpg">
     <link rel="icon" type="image/svg+xml" sizes="172x150" href="assets/img/mcss.svg">
     <link rel="icon" type="image/svg+xml" sizes="172x150" href="assets/img/mcss.svg">
     <link rel="icon" type="image/svg+xml" sizes="172x150" href="assets/img/mcss.svg">
@@ -17,32 +19,82 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yellowtail&amp;display=swap">
     <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+<!-- HEH HEH. Caught you lurking... Anthony Tedja will see you now
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣖⣯⣿⣛⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⡻⣿⣿⣿⣾⣽⡻⠿⣛⣯⣭⣭⣭⣭⣭⣟⣛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣟⣊⣛⣿⣿⢟⣿⣿⣲⡶⣶⣦⣭⣝⣿⣿⣿⣿⣶⣭⡛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⢟⣭⣶⣿⣿⣿⣿⣷⣯⣛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣻⣽⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⣿⣿⣿⣿⠃⠀⣤⣬⠏⠉⠁⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣿⡟⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣿⣿⣿⣿⣿⣿⣿⡆⠀⢿⣯⣄⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⡟⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣱⣿⣿⣿⣟⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡻⣿⣿⣿⣿⣷⡀⠈⢿⣟⣀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣼⣿⣿⣿⡿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡝⢿⣿⣿⣿⣷⡄⠈⢻⣿⣷⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⣿⢯⣾⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣌⢿⣿⣿⣿⣿⣆⠀⠙⢿⣿⣷⡄⣠⠘⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿⢯⣿⣿⢯⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⢿⣿⣿⣿⣿⡷⣄⡀⠈⠙⠛⠛⠀⣧⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⢿⣿⣿⣿⣿⡟⣾⣿⡟⣾⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣎⣿⣿⣿⣿⣷⢻⣿⣶⣄⢠⣤⣴⣿⣷⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⡿⣿⣿⣿⣿⣿⢋⣿⠏⡟⢉⣉⣽⢋⣿⢃⣿⣿⣿⢸⣿⣿⠿⡋⣸⣿⣿⢳⣿⣿⣿⡿⣿⣿⣿⣿⣿⡟⣿⣿⣿⣧⣿⣿⣿⣿⣿⣿⡍⣿⣿⡿⣿⣿⣿⣿⡼⣿⣿⣿⣿⡿⣿⣿⡾⣯⢿⣿⣿⣿⣿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⡇⣿⣿⣿⡿⢃⣈⠅⡼⠠⠄⠲⠃⣈⠁⣼⣿⣿⣿⠜⠋⠁⣾⢃⣿⣿⡟⣾⣿⣿⣿⣷⣿⣿⣿⣿⣿⣷⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⡟⡙⣿⣷⠹⣿⣿⣿⣿⣹⣿⣿⣿⡏⣿⣿⡇⣿⣞⣿⣿⣿⣿⡽⡘⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⡇⣿⣿⣿⣷⣾⣿⣾⣷⣶⣾⣷⣾⣿⣾⣿⣿⣿⣿⠄⠀⣰⡟⢸⣿⣿⣧⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⣿⢿⣿⣿⡇⣿⣿⣿⣿⣿⣿⢇⣭⡝⣿⢘⣢⣙⢿⣿⣇⢿⣿⣿⣿⣿⣿⣇⣿⣿⡼⣿⣿⣿⣷⢻⡽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣷⢻⣿⣿⣿⢃⣿⠏⡍⢩⠥⣽⢃⣿⢇⣿⣿⣿⣿⡆⠀⣻⡗⣾⣿⣿⣻⣿⣿⣿⣿⣿⣧⢿⣿⣿⣿⣿⢸⣿⣿⠇⢹⣿⣿⣿⣿⡟⣼⣿⣿⡽⣿⣿⣿⣷⣭⡻⡼⣿⣿⣿⣿⣿⢻⣿⣿⣿⣹⣿⣿⣿⡟⣷⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⢹⣿⣿⢇⣠⡄⡼⠡⠔⣒⢁⣠⠄⡼⢹⣿⣿⣿⢢⡀⠻⢀⢻⣿⣿⣿⣿⡟⣿⣿⣿⣿⠈⢿⣿⣿⡟⢸⣿⣿⢸⣼⣿⣿⣿⢟⡽⣛⣭⣽⣷⣷⣶⣶⣾⣿⣯⣄⣿⣿⡇⣿⡿⣾⣿⣿⣿⣧⢿⣿⣿⣿⢻⣷⢻⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⡼⣿⣿⣾⣿⣷⣿⣶⣿⣿⣾⣿⣾⣿⣿⣿⣿⣿⢸⣿⣎⢸⣸⣿⣿⢸⣿⣿⢹⣿⣿⡿⢈⣬⠻⣿⡇⣿⣿⢇⣿⣏⣿⠿⣫⣾⢾⣿⢻⡟⠭⠟⠓⠒⠒⠚⠚⠛⢸⣿⣿⣿⢧⣿⣿⣿⣿⣿⡼⣿⣿⣿⣼⣿⣧⢻⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣿⢸⡟⣿⣿⢸⣿⡇⣼⣿⣿⢳⣿⣿⣷⣜⢇⣿⢏⣾⣿⣸⣵⣿⣿⡻⠓⠈⢀⡀⠀⠀⡀⡀⠐⢲⣖⢰⣼⣿⣹⣟⣾⣿⣿⣿⣿⣿⣷⢿⣿⣿⡇⣿⣿⣄⢻⣿⣿⣿⣿⣿⣿
+    ⣿⣿⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡑⣿⣿⡏⣼⣷⣿⣿⣸⣿⢧⡇⡿⣣⡿⣿⣛⣛⣻⡸⠫⣾⣿⣿⣿⣿⣿⣟⣤⣥⣾⣿⣇⢾⣿⣾⣤⠴⠿⠋⣾⣻⡟⣿⣽⣿⣿⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⣿⡟⣆⢻⣿⣿⣿⣿⣿
+    ⣿⣿⣧⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣩⣬⣿⡇⢻⣿⣼⣿⡏⣿⣼⡇⣡⣷⣿⣿⠿⣿⣷⣾⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣡⣦⣾⡿⢿⣿⣎⢻⢳⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⢻⣿⣧⣿⣆⢿⣿⣿⣿⣿
+    ⣿⣿⣿⡜⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢣⣿⣿⣿⡇⡿⣿⣷⢿⣷⢧⣯⣾⡿⠏⠓⠋⠉⠉⢁⡉⢠⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣻⣿⣿⣫⡾⣿⣾⣏⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢹⣿⣿⢸⣿⡇⣿⣿⣎⢿⣿⣿⣿
+    ⣿⣿⣿⣿⣎⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣣⣿⣿⣿⣿⡇⣧⢻⣿⣟⣿⣘⣯⠁⠀⠀⢀⣠⠀⢀⣭⣭⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣻⣟⣽⣿⣿⣿⣾⣿⣿⢘⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⢸⣿⡇⣏⣿⣿⣎⣿⣿⣿⡇
+    ⣿⣿⣿⣿⣿⣷⣝⡿⣿⣿⣿⣿⡿⠿⣛⣵⣿⣿⣿⣿⣿⢻⣿⣯⢿⣿⣞⣇⠧⢀⣾⣦⡻⠿⢛⢛⣭⣥⣿⣿⣿⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢛⣿⣿⣿⡟⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣸⣿⣿⢻⣿⣿⣿⡜⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣯⢿⣿⡽⣼⣿⣿⣿⣥⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣵⣿⣿⣿⡿⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⡿⣾⣾⣿⡼⣿⣿⣿⣿⣿⢹⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⡻⣿⡅⢿⣿⢟⣥⣺⢞⣵⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣟⣯⣾⣿⣿⣿⣿⣿⢱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣾⣷⣿⣧⣿⠯⣽⣿⣹⣿⣿⣿⡏⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⣿⣿⣿⣿⣿⣿⣿⣿⡜⣡⣾⣾⣽⣿⣿⡟⠿⢿⣿⣿⣿⣿⠿⣿⣛⣯⣷⣿⣿⣿⣿⣿⣿⣿⣿⢧⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⡿⣼⡟⣴⡿⣳⣿⣿⣿⣿⣿⢻
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣷⡿⡜⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣳⣿⣿⢻⣷⢟⣼⣟⣿⣿⣿⣿⣿⣿⣿⢸
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣯⠟⢱⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣳⣿⣿⣿⢸⣫⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⢸
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⡯⠟⠛⠉⢄⡴⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣳⣿⣿⣿⡟⣿⣿⣿⣿⣿⣿⣿⢣⢺⣿⣿⣿⢸
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡁⢠⣬⣉⣛⢛⣛⡻⠛⠛⠛⠛⡛⡉⠥⠀⠁⣀⣴⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣿⣿⣿⣿⣿⢹⣿⣿⣿⣿⣿⣿⡏⣾⢸⣿⣿⡏⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡘⣿⣿⢻⢸⣿⣿⢳⢧⠋⢀⢡⣐⣤⣴⣾⣿⣿⣿⣏⣿⣿⣿⣿⣿⣿⣿⢟⣵⣿⣿⣿⣿⣿⢃⣿⣿⣿⣿⣿⣿⢏⣼⣿⣼⣿⡿⣸⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢿⣿⡇⢻⢟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡜⣿⢸⣸⣿⢏⠟⠀⣠⣿⡄⣿⣿⣿⣿⣿⣿⡿⡃⣿⣿⣿⣿⡿⣻⣵⣿⣿⣿⣿⣿⣿⢣⣾⣿⣿⣿⣿⡿⣫⣾⣿⣏⣿⡿⣱⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢟⣯⣽⣭⣽⣽⣻⣿⣿⣿⡜⡿⣃⣶⡙⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡹⡞⠿⠋⠈⠀⣰⣿⣿⣷⣜⢿⣿⡿⣟⣽⡾⠧⠻⣟⣯⣷⣿⣿⣿⣿⣿⣿⣿⠟⠁⠻⣿⣿⣿⢿⣫⣾⣿⣿⣟⠼⣫⣾⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡗⣿⣿⣿⣿⣿⣿⣿⡼⢟⣩⣶⠸⣿⣼⣿⣮⡛⡿⢿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⣼⣿⣿⣿⡿⠛⠁⠄⡻⣿⣮⣕⡻⢿⣿⣿⣿⣿⣿⡿⠿⠟⠋⠁⠀⠈⠠⠈⠙⢶⣿⣿⣿⣿⣯⣶⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣾⣿⣿⣿⣿⣿⣿⣿⣧⣿⣿⣿⣧⡹⣧⢿⣿⣿⣮⣕⠮⣭⣟⣛⣛⣛⣻⣯⣵⠇⠀⣸⣿⣿⡿⠋⠄⢔⣉⣽⣈⡜⣿⣿⣿⣿⣿⣶⣶⣶⣶⡿⠃⠀⠀⠀⠀⠀⠀⠀⠂⠰⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣝⢿⣿⣿⣿⣿⣿⣿⢯⣿⣿⣿⣿⣷⣎⠫⢻⣿⣿⣿⣿⣶⣮⣭⣟⠛⠛⠛⠋⠀⠀⣿⣿⢏⠴⠃⢶⢫⠦⡖⡱⢡⡜⢿⣿⣿⣿⣿⣿⣿⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⡐⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣮⣿⣿⡿⡿⢿⣣⣿⣿⣿⣿⣿⣿⣿⣿⣶⣾⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⡞⣼⣾⡟⠁⠀⠀⢩⡁⠉⠀⠈⣯⣮⡻⣿⣿⣿⢿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀⠀⠀⠀⠀⣼⣹⠿⠌⠀⠀⠀⠀⣾⡇⠀⠀⠀⠸⣿⣿⣣⣿⡃⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠆⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⡿⢽⠻⠶⠶⣤⣴⣟⣃⣀⣀⣀⠀⠵⠿⠟⠽⣹⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+    ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠉⣿⠿⡝⠛⠛⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠃⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇
+    -->
 </head>
 
 <body id="page-top">
-    <header class="d-flex" style="padding: 3rem 0;height: auto;position: relative;/*min-height: 100vh;*/">
+    <header class="d-flex" style="padding: 1rem 0;height: auto;position: relative;/*min-height: 100vh;*/">
         <div class="container my-auto">
-            <div id="content" class="text-center">
-                <h2 data-aos="zoom-in-up" data-aos-delay="800" data-aos-once="true" class="text-start" style="color: black;font-family: 'Yellowtail';text-shadow: 2px 2px 2px var(--bs-cyan);margin-bottom: clamp(-2.25rem, -1rem - 2.25vw, -1rem);">the MCSS</h2>
-                <h1 data-aos="zoom-in-up" data-aos-delay="500" data-aos-once="true" class="my-0" style="color: #9ddaf7;text-shadow: 3px 3px 5px var(--bs-purple);font-size: clamp(3.5rem, 1.5rem + 10vw, 10rem);"><em>SCAVENGER</em></h1>
-                <h2 data-aos="zoom-in-up" data-aos-delay="1000" data-aos-once="true" class="text-end" style="color: black;font-family: 'Yellowtail';text-shadow: 2px 2px 2px var(--bs-cyan);margin-top: clamp(-2.25rem, -1rem - 2.25vw, -1rem);">hunt</h2>
+            <div id="content" class="text-center p-3">
+                <div id="title" style="margin: 0 clamp(-0.5rem, -0.5rem - 2.5vw, -1rem);">
+                    <h2 data-aos="zoom-in-up" data-aos-delay="800" data-aos-once="true" class="text-start subtitle px-3" style="margin-left: -1rem;">the MCSS</h2>
+                    <h1 data-aos="zoom-in-up" data-aos-delay="500" data-aos-once="true" style="color: #9ddaf7;text-shadow: 3px 3px 5px var(--bs-purple);font-size: clamp(3.5rem, 1.5rem + 10vw, 10rem);margin-top: calc(-1 * clamp(2rem, 1rem + 5vw, 4.5rem));margin-bottom: calc(-1 * clamp(1.5rem, 0rem + 5vw, 3rem));"><em>SCAVENGER</em></h1>
+                    <h2 data-aos="zoom-in-up" data-aos-delay="1000" data-aos-once="true" class="text-end subtitle px-3" style="margin-right: -1rem;">hunt!</h2>
+                </div>
                 <div class="row">
-                    <div class="col-lg-8 mx-auto mt-5" id="noscene" style="display: initial;">
-                        <h2 data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" class="mx-3">Find &amp; scan the QR Codes to view our challenges!</h2>
-                        <p data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" class="mx-3 mb-4">When you solve each challenge, you will get clues on where the next challenge will be.&nbsp; Signup on November 21 at 10am, DH Main Floor for a campus-wide hunt.&nbsp;You have the chance to win prizes until 5pm. Good luck!<br></p>
+                    <div class="col-lg-8 mx-auto mt-4 mt-md-5" data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="noscene" style="display: initial;background-color: rgb(255 255 255 / 0.5);padding: 2rem 0;border-radius: 1rem;">
+                        <h2 data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" class="mx-3">Find &amp; scan the QR codes to take our challenges!</h2>
+                        <p data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" class="mx-3 mb-1">When you solve each challenge, you will get a clue and code on where the next challenge will be. Signup on November 21 at 10am, DH Main Floor for a campus-wide hunt.&nbsp;You will have the chance to win prizes until 5pm! Good luck :)<br></p><span class="spinner-border spinner-border-sm mt-4" role="status" id="loading" style="display: none;"></span>
+                        <div id="invalidid" class="invalid-feedback mt-5" style="font-size: 1rem;"></div>
                     </div>
-                    <div class="col-lg-8 mx-auto mt-5" id="scene" style="display: none;">
+                    <div class="col-lg-8 mx-auto mt-4 mt-md-5" data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="scene" style="display: none;background-color: rgb(255 255 255 / 0.5);padding: 2rem 0;border-radius: 1rem;">
                         <h2 data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="challengenum" class="mx-3">Challenge #0</h2>
-                        <p data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="notes" class="mx-3 mb-4">Note: Lorem Ipsum<br></p><img data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="challengeimage" class="img-fluid" src="assets/img/mcss.svg">
+                        <p data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="notes" class="mx-3 my-0" style="display: none;">Note: Lorem Ipsum<br></p><img data-aos="zoom-in-up" data-aos-delay="1500" data-aos-once="true" id="challengeimage" class="mx-3 my-4" src="assets/img/scavenger.jpg" style="border-radius: 0.75rem;width: calc(100% - 2rem);height: auto;">
+                        <form data-aos="zoom-in-up" data-aos-offset="-100" data-aos-delay="1500" data-aos-once="true" id="form" class="mx-3 needs-validation" novalidate="" onsubmit="return false">
+                            <div class="form-floating"><input class="form-control form-control has-validation" type="text" id="inputvalue" placeholder="Your Answer" style="background-color: rgb(255 255 255 / 0.25);border-radius: 0.75rem;"><label class="form-label" for="inputvalue">Answer Here:</label>
+                                <div id="validmessage" class="valid-feedback mt-3" style="font-size: 1rem;"></div>
+                                <div id="invalidmessage" class="invalid-feedback mt-3" style="font-size: 1rem;"></div><button type="submit" hidden></button>
+                            </div>
+                        </form><span class="spinner-border spinner-border-sm" role="status" id="spinner" style="margin-top: 2rem;display: none;"></span>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <footer data-aos="fade" data-aos-offset="-50" data-aos-delay="2000" data-aos-once="true">
+    <footer data-aos="fade" data-aos-offset="-100" data-aos-delay="2000" data-aos-once="true">
         <div class="container px-3 py-3">
             <div class="d-flex justify-content-between align-items-center my-2 my-lg-1">
-                <p class="mb-0">MCSS © 2023</p>
+                <p class="mb-0">MCSS © 2022</p>
                 <p class="mb-0">✨ by <a href="https://github.com/anthonytedja">Anthony Tedja</a></p>
             </div>
         </div>
